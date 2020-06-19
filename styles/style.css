@@ -57,7 +57,13 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  transition: all .2s ease-in-out;
 }
+
+.header__link:hover {
+  color: black;
+}
+
 
 .header__main-illustration {
   position: absolute;
@@ -114,7 +120,7 @@
   margin: 0 0 30px;
 }
 
-.two-columns__paragraph:nth-child(3) {
+.two-columns__paragraph:last-child  {
   margin: 0;
 }
 
@@ -140,6 +146,7 @@
   font-weight: bold;
   text-align: center;
   margin: 0;
+  margin-bottom: 20px; /* Отступ из класса indent перенесен, но ведь по БЭМу нельзя задавать внешнюю геометрию блоку*/
   position: relative;
   z-index: 1;
 }
@@ -177,11 +184,6 @@
   padding: 100px 0;
 }
 
-.title-indent {
-  margin-bottom: 20px;
-
-}
-
 .table__heading {
   line-height: 115%;
   font-size: 24px;
@@ -195,7 +197,7 @@
   margin: 0 0 20px;
 }
 
-.table__text:nth-child(3) {
+.table__text:last-child {
   margin: 0;
 }
 
@@ -219,6 +221,7 @@
   font-weight: bold;
   position: relative;
   z-index: 1;
+  margin-bottom: 70px; /* Отступ из класса indent перенесен, но ведь по БЭМу нельзя задавать внешнюю геометрию блоку*/
 }
 
 .feynman__subtitle {
@@ -247,10 +250,11 @@
   color: #000;
   cursor: pointer;
   z-index: 1;
+  transition: all .2s ease-in-out;
 }
 
-.feynman-title-indent {
-  margin-bottom: 70px;
+.feynman__link:hover {
+  color: #2f80ed;
 }
 
   /* Конец блока 4. */
@@ -259,6 +263,7 @@
 
 .kaufman {
   background-color: #1f1f1f;
+  color: white;
   padding: 90px 0;
   display: flex;
   flex-direction: column;
@@ -273,6 +278,7 @@
   top: 0;
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
 }
 
 .table_theme_dark {
@@ -304,16 +310,13 @@
   min-height: 350px;
 }
 
-.footer__column_content_social {
+.footer__column {
   display: flex;
   flex-direction: column;
 }
 
-
 .footer__column_content_copyright {
   flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -343,18 +346,27 @@
   color: white;
 }
 
-.footer__links {
+.footer__link {
   text-decoration: none;
   color: white;
+  transition: all .2s ease-in-out;
 }
 
+.footer__link:hover {
+  color: #2f80ed;
+}
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   align-items: center;
+  transition: all .2s ease-in-out;
 }
 
-  /* Конец блока 6. */
+.footer__link:hover .footer__social-icon {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #2f80ed;
+}
+
 
