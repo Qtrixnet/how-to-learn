@@ -1,0 +1,14 @@
+.footer__link {
+  text-decoration: none;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+.footer__link:hover {
+  opacity: .5;
+}
+  
+.footer__link:hover .footer__social-icon {
+  padding-bottom: 3px;
+  border-bottom: 2px solid white ;
+}
