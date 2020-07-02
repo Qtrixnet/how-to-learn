@@ -6,12 +6,11 @@
 @import url(./__link/footer__link.css);
 @import url(./__social-icon/footer__social-icon.css);
 @import url(./logo/_place_footer/logo_place_footer.css);
-@import url(./_content/footer__column_content_copyright.css);
-@import url(./_content/footer__column_content_info.css);
-@import url(./_content/footer__column_content_social.css);
 
 .footer {
   background-color: #1f1f1f;
   color: white;
   padding: 60px 0 40px;
+  min-height: 350px;
+  display: flex;
 }
