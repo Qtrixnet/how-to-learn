@@ -1,0 +1,33 @@
+.cards {
+  width: 920px;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 115%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__item {
+    width: 240px;
+    margin-right: 100px;
+    &:nth-child(3n) {
+      margin: 0;
+    }
+  }
+  &__image {
+    width: 160px;
+    height: 160px;
+    margin: 60px 40px 43px;
+    border-radius: 50%;
+  }
+  &__description {
+    text-align: center;
+    line-height: 23px;
+    font-size: 18px;
+  }
+}

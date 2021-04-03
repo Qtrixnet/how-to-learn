@@ -1,0 +1,31 @@
+.two-columns {
+  width: 80%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  &__brief {
+    width: 175px;
+    line-height: 120%;
+    font-size: 18px;
+    color: #2f80ed;
+    font-weight: normal;
+    margin: 0;
+  }
+  &__main-text {
+    width: 80%;
+    min-width: 784px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__paragraph {
+    line-height: 34px;
+    font-size: 24px;
+    margin: 0 0 30px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__span-accent {
+    font-weight: bold;
+  }
+}
