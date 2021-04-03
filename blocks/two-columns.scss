@@ -1,13 +1,16 @@
+@use 'base';
+
 .two-columns {
   width: 80%;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  color: base.$contrast;
   &__brief {
     width: 175px;
     line-height: 120%;
     font-size: 18px;
-    color: #2f80ed;
+    color: base.$accent;
     font-weight: normal;
     margin: 0;
   }

@@ -1,6 +1,8 @@
+@use 'base';
+
 .footer {
-  background-color: #1f1f1f;
-  color: white;
+  background-color: base.$subcontrast;
+  color: base.$submain;
   padding: 60px 0 40px;
   min-height: 350px;
   display: flex;
@@ -35,18 +37,18 @@
     font-size: 18px;
     margin: 20px 0 16px;
     padding: 0;
-    color: white;
+    color: base.$submain;
   }
   &__link {
     text-decoration: none;
-    color: white;
+    color: base.$submain;
     transition: all .2s ease-in-out;
     &:hover {
-      opacity: .5;
+      opacity: .8;
     }
     &:hover .footer__social-icon {
       padding-bottom: 3px;
-      border-bottom: 2px solid white ;
+      border-bottom: 2px solid base.$submain;
     }
   }
   &__social-icon {

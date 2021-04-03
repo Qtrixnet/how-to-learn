@@ -1,5 +1,8 @@
+@use 'base';
+
 .khan {
-  background-color:  #f2f2f2;
+  background-color: base.$submain;
+  color: base.$contrast;
   padding: 105px 0 0;
   &__container {
     width: 80%;
@@ -49,11 +52,11 @@
   &__buy-link {
     line-height: 42px;
     font-size: 30px;
-    color: #2f80ed;
+    color: base.$accent;
     text-decoration: none;
     transition: all .2s ease-in-out;
     &:hover {
-      opacity: .5;
+      opacity: .8;
     }
   }
 }

@@ -1,6 +1,8 @@
+@use 'base';
+
 .feynman {
   min-height: 790px;
-  background-color:  #f2f2f2;
+  background-color: base.$submain;
   padding: 80px 0 0;
   text-align: center;
   position: relative;
@@ -13,6 +15,7 @@
     position: relative;
     z-index: 1;
     margin-bottom: 70px;
+    color: base.$contrast;
   }
   &__subtitle {
     margin: auto;
@@ -20,6 +23,7 @@
     font-size: 36px;
     position: relative;
     z-index: 1;
+    color: base.$contrast;
   }
   &__photo {
     position: absolute;
@@ -39,8 +43,9 @@
     cursor: pointer;
     z-index: 1;
     transition: all .2s ease-in-out;
+    color: base.$contrast;
     &:hover {
-      opacity: .5;
+      opacity: .8;
     }
   }
 }

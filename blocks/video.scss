@@ -12,6 +12,10 @@
     margin-right: 20px;
     transform: translateY(50px);
     border: none;
+    transition: all 1s ease-in-out;
+    &:hover {
+      filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.2));
+    }
     &:last-child {
       margin-right: 0;
     }
